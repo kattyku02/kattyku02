@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]      BISMILLAHIRRAHMANIRRAHIM      []\n");
-echo color("yellow","[]          BY : KOMPLONK             []\n");
+echo color("green","[]      Baby Katty      []\n");
+echo color("yellow","[]          BY : Rina             []\n");
 echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   []\n");
 function change(){
         $nama = nama();
@@ -56,7 +56,7 @@ function change(){
         echo color("yellow",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"gofood022620a"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"cobagofood010420a"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -143,8 +143,8 @@ function change(){
         echo "\n".color("green","12.".$voucher12)."\n";
          setpin:
          echo color("nevy","=============( SET PIN )=============")."\n";
-         echo color("yellow","========( PIN ANDA = 112233 )========")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("yellow","========( PIN ANDA = 168168 )========")."\n";
+         $data2 = '{"pin":"168168"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          otpsetpin:
          echo color("nevy","?] Otp set pin: ");
