@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]      BISMILLAHIRRAHMANIRRAHIM      []\n");
-echo color("yellow","[]          BY : GARONG GROUP         []\n");
+echo color("green","[]      Baby Katty      []\n");
+echo color("yellow","[]          BY : Rina         []\n");
 echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   []\n");
 function change(){
         $nama = nama();
@@ -49,9 +49,9 @@ function change(){
         save("token.txt",$token);
         setpin:
          echo color("nevy","=============( SET PIN )=============")."\n";
-         echo color("yellow","========( PIN ANDA = 112233 )========")."\n";
+         echo color("yellow","========( PIN ANDA = 168168 )========")."\n";
          echo color("green","+] Kode verifikasi sudah di kirim")."\n";
-         $data2 = '{"pin":"112233"}';
+         $data2 = '{"pin":"168168"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          otpsetpin:
          echo color("nevy","?] Otp set pin: ");
